@@ -86,8 +86,8 @@ window.DASHBOARD_CONFIG = {
     "googleFontsUrl": ""
   },
   "images": {
-    "headerDesktop": "./customer/header.png",
-    "headerMobile": "./customer/header-mobile.png",
+    "headerDesktop": "",
+    "headerMobile": "",
     "favicon": "./customer/vite.svg"
   },
   "sheets": {
