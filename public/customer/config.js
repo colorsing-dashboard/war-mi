@@ -204,7 +204,7 @@ window.DASHBOARD_CONFIG = {
     "owner": "colorsing-dashboard",
     "repo": "war-mi",
     "branch": "main",
-    "token": ""
+    "token": "rev:68JraTiEGXLCZ4M7BUjlRzdn9gKJTJ0jcqTibJ8vS72hMX6o76CUB08Nyvb_9eUXHGyjvWqR0IMBSTQB11_tap_buhtig"
   },
   "admin": {
     "password": "1023",
