@@ -18,12 +18,12 @@ window.DASHBOARD_CONFIG = {
     "titleGradientDirection": "to-r",
     "titleGlow": false,
     "titlePosition": "center",
-    "titleSize": "large",
+    "titleSize": "xlarge",
     "titleTextFill": "default",
     "titleGlassBg": 0.05,
     "titleGlassBlur": 3,
     "titlePaddingY": 12,
-    "headerOverlayOpacity": 0.3,
+    "headerOverlayOpacity": 0,
     "headerImageFit": "contain",
     "headerHeight": "",
     "headerHeightMobile": "",
@@ -86,8 +86,8 @@ window.DASHBOARD_CONFIG = {
     "googleFontsUrl": ""
   },
   "images": {
-    "headerDesktop": "",
-    "headerMobile": "",
+    "headerDesktop": "./customer/header.png",
+    "headerMobile": "./customer/header-mobile.png",
     "favicon": "./customer/vite.svg"
   },
   "sheets": {
