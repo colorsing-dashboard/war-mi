@@ -3,44 +3,91 @@
 
 window.DASHBOARD_CONFIG = {
   "brand": {
-    "name": "",
+    "name": "waon",
     "sidebarTitle": "　color sing",
-    "footerText": "",
-    "footerSubText": "",
+    "footerText": "waon",
+    "footerSubText": "みんなが楽しめる枠にしたいです",
     "footerNote": "",
-    "pageTitle": "サイト名を設定 - 特典管理",
+    "pageTitle": "waon - 特典管理",
     "loadingEmoji": "🎵",
     "loadingText": "Loading...",
+    "showHeader": true,
     "showTitle": true,
+    "titleStyle": "gradient",
     "titleGradient": true,
-    "titleGradientDirection": "to-r"
+    "titleGradientDirection": "to-r",
+    "titleGlow": false,
+    "titlePosition": "center",
+    "titleSize": "large",
+    "titleTextFill": "default",
+    "titleGlassBg": 0.05,
+    "titleGlassBlur": 3,
+    "titlePaddingY": 12,
+    "headerOverlayOpacity": 0.3,
+    "headerImageFit": "contain",
+    "headerHeight": "",
+    "headerHeightMobile": "",
+    "headerImageW": 0,
+    "headerImageH": 0,
+    "headerImageWMobile": 0,
+    "headerImageHMobile": 0,
+    "glassTint": 0.08,
+    "glassReflection": 0.75,
+    "glassSpecular": 0.95,
+    "glassEdge": 60
   },
   "colors": {
-    "deepBlue": "#0a1628",
-    "oceanTeal": "#1b4965",
-    "lightBlue": "#8ab4f8",
-    "amber": "#d4a574",
-    "accent": "#c1121f",
-    "gold": "#ffd700"
+    "deepBlue": "#FFF8E8",
+    "oceanTeal": "#FFE0B2",
+    "lightBlue": "#FF9933",
+    "amber": "#FFD54F",
+    "accent": "#FF6B35",
+    "gold": "#FFD700",
+    "brightness": "light"
   },
   "colorOverrides": {
     "headerGradientStart": "",
     "headerGradientEnd": "",
-    "primaryText": "",
-    "accentText": "",
-    "rank1Card": "",
-    "titleColor": ""
+    "titleGradientStart": "#FF9933",
+    "titleGradientMid": "#FFD54F",
+    "titleGradientEnd": "#FF6B35",
+    "cardBorder": "",
+    "cardBorderHover": "",
+    "primaryText": "#B85513",
+    "accentText": "#D97706",
+    "rank1Card": "#FF6B35",
+    "backgroundMain": "",
+    "backgroundMid": "",
+    "nameText": "#A0451A",
+    "footerText": "#B85513",
+    "contentText": "#5C2A0E",
+    "titleColor": "#E85D04",
+    "subText": "",
+    "popupOverlayColor": "",
+    "popupOverlayOpacity": "",
+    "menuCardLabelColor": "",
+    "menuCardLabelOpacity": "",
+    "tierCardBgColor": "#FFFFFF",
+    "tierCardBgOpacity": 0.85,
+    "menuCardBgColor": "",
+    "menuCardBgOpacity": "",
+    "sidebarBgColor": "#FFFFFF",
+    "sidebarBgOpacity": 0.9,
+    "bottomNavBgColor": "#FFFFFF",
+    "bottomNavBgOpacity": 0.85,
+    "glassBgColor": "#FFFFFF",
+    "glassBgOpacity": 0.65
   },
   "fonts": {
-    "display": "'Playfair Display', serif",
-    "displayUrl": "https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&display=swap",
-    "body": "'M PLUS 2', sans-serif",
-    "bodyUrl": "https://fonts.googleapis.com/css2?family=M+PLUS+2:wght@400;500;700&display=swap",
-    "googleFontsUrl": "https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&display=swap"
+    "display": "'Zen Maru Gothic', sans-serif",
+    "displayUrl": "https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700&display=swap",
+    "body": "'M PLUS Rounded 1c', sans-serif",
+    "bodyUrl": "https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700&display=swap",
+    "googleFontsUrl": ""
   },
   "images": {
-    "headerDesktop": "",
-    "headerMobile": "",
+    "headerDesktop": "./customer/header.png",
+    "headerMobile": "./customer/header-mobile.png",
     "favicon": "./customer/vite.svg"
   },
   "sheets": {
@@ -50,6 +97,7 @@ window.DASHBOARD_CONFIG = {
     "benefitsContentSheetName": "特典内容",
     "historySheetName": "特典履歴",
     "iconSheetName": "枠内アイコン",
+    "eventSheetName": "イベント",
     "ranges": {
       "ranking": "D2:G5",
       "goals": "A2:B10",
@@ -62,93 +110,53 @@ window.DASHBOARD_CONFIG = {
     {
       "id": "home",
       "label": "Home",
-      "icon": "🏠",
+      "icon": "home",
       "enabled": true
     },
     {
       "id": "menu",
-      "label": "Menu",
-      "icon": "🍸",
+      "label": "特典内容",
+      "icon": "book-open",
       "enabled": true
     },
     {
       "id": "rights",
-      "label": "ボトルキープ",
-      "icon": "👥",
+      "label": "特典権利者",
+      "icon": "user-check",
       "enabled": true,
-      "title": "ボトルキープ一覧"
+      "title": "特典権利者一覧"
     },
     {
       "id": "icons",
       "label": "枠内アイコン",
-      "icon": "🖼️",
+      "icon": "gift",
       "enabled": true,
       "title": "枠内アイコン"
+    },
+    {
+      "id": "events",
+      "label": "イベント",
+      "icon": "calendar-days",
+      "enabled": true,
+      "title": "イベント"
     }
   ],
   "benefitTiers": [
     {
       "key": "1k",
-      "icon": "🖼️",
+      "label": "歌推し様ルーレット参加権",
+      "icon": "🎰",
       "columnIndex": 0,
-      "displayTemplate": "特典: {value}",
-      "isMembership": false
-    },
-    {
-      "key": "5k",
-      "icon": "🎵",
-      "columnIndex": 1,
-      "displayTemplate": "強制リクエスト: {value}曲"
-    },
-    {
-      "key": "10k",
-      "icon": "🎮",
-      "columnIndex": 2,
-      "displayTemplate": "権利: {value}時間分"
-    },
-    {
-      "key": "20k",
-      "icon": "💬",
-      "columnIndex": 3,
-      "displayTemplate": "オープンチャット招待済",
-      "isBoolean": true
-    },
-    {
-      "key": "30k",
-      "icon": "🎤",
-      "columnIndex": 4,
-      "displayTemplate": "アカペラ音源獲得: {value}曲"
-    },
-    {
-      "key": "40k",
-      "icon": "⚡",
-      "columnIndex": 5,
-      "displayTemplate": "強制リクエスト: {value}曲"
-    },
-    {
-      "key": "50k",
-      "icon": "🏆",
-      "columnIndex": 6,
-      "displayTemplate": "ミックス音源獲得: {value}曲"
-    },
-    {
-      "key": "メンバーシップA",
-      "icon": "👑",
-      "columnIndex": 7,
-      "displayTemplate": "月内リクエスト対応中",
-      "isMembership": true
-    },
-    {
-      "key": "メンバーシップB",
-      "icon": "🌟",
-      "columnIndex": 0,
-      "displayTemplate": "特典: {value}",
-      "isMembership": true
+      "displayTemplate": "済",
+      "isBoolean": true,
+      "showUsers": false,
+      "showHistory": false
     }
   ],
   "home": {
     "rankingTitle": "Ranking",
     "pointsLabel": "歌推しPt",
+    "pointsUnit": "k",
     "targetsTitle": "Targets",
     "targetLabels": [
       "今旬の目標",
@@ -156,12 +164,18 @@ window.DASHBOARD_CONFIG = {
     ],
     "faq": {
       "enabled": true,
+      "accordion": true,
       "title": "📝 FAQ・注意事項",
-      "items": []
+      "items": [
+        {
+          "question": "枠内のお願い",
+          "answer": "みんなが楽しめる枠にしたいです"
+        }
+      ]
     }
   },
   "menu": {
-    "title": "Menu"
+    "title": "特典内容"
   },
   "ui": {
     "errorTitle": "エラー",
@@ -182,18 +196,18 @@ window.DASHBOARD_CONFIG = {
     "iconFloat": true,
     "particles": "bubble",
     "particleDirection": "up",
-    "particleColor": "",
+    "particleColor": "#FFD54F",
     "particleSize": 0.5,
-    "particleOpacity": 1
+    "particleOpacity": 0.8
   },
   "deploy": {
     "owner": "colorsing-dashboard",
-    "repo": "",
+    "repo": "war-mi",
     "branch": "main",
     "token": ""
   },
   "admin": {
-    "password": "",
+    "password": "1023",
     "developerKey": "CSadmin"
   }
 }
