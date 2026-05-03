@@ -91,7 +91,7 @@ window.DASHBOARD_CONFIG = {
     "favicon": "./customer/vite.svg"
   },
   "sheets": {
-    "spreadsheetId": "",
+    "spreadsheetId": "1PcirSFuOEA22AgnstdqvI-FMGtC9DZAf-K8fmpdRjdA",
     "rankingSheetName": "目標管理・ランキング",
     "benefitsSheetName": "特典管理",
     "benefitsContentSheetName": "特典内容",
